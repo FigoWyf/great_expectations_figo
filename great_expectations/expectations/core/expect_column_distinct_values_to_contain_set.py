@@ -264,5 +264,6 @@ class ExpectColumnDistinctValuesToContainSet(ColumnAggregateExpectation):
             "result": {
                 "observed_value": sorted(list(observed_value_set)),
                 "details": {"value_counts": observed_value_counts},
+                "difference": expected_value_set - observed_value_set
             },
         }
